@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Garima's Website</title>
+
+<style>
+body {
+  margin:0;
+  font-family: Arial;
+  background: linear-gradient(135deg,#6a11cb,#2575fc);
+  color:#333;
+}
+
+.dark {
+  background:#111;
+  color:white;
+}
+
+.hero {
+  text-align:center;
+  padding:60px;
+  color:white;
+}
+
+.hero button {
+  padding:10px 20px;
+  border:none;
+  border-radius:8px;
+  background:white;
+  cursor:pointer;
+}
+
+.container {
+  width:90%;
+  max-width:800px;
+  margin:30px auto;
+}
+
+.card {
+  background:white;
+  padding:20px;
+  border-radius:15px;
+  margin-bottom:20px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.2);
+  animation:fadeIn 1s;
+}
+
+.dark .card {
+  background:#222;
+  color:white;
+}
+
+button {
+  background:#2575fc;
+  color:white;
+  padding:10px;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+button:hover {
+  transform:scale(1.05);
+}
+
+.float {
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:white;
+  padding:15px;
+  border-radius:50%;
+  text-decoration:none;
+  font-size:20px;
+}
+
+@keyframes fadeIn {
+  from {opacity:0; transform:translateY(20px);}
+  to {opacity:1; transform:translateY(0);}
+}
+
+html {
+  scroll-behavior:smooth;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Hero -->
+<div class="hero">
+  <h1>Hi, I'm Garima 👋</h1>
+  <p>Student | Blogger | Online Earning Learner 💻</p>
+  <button onclick="document.getElementById('contact').scrollIntoView()">Contact Me</button>
+  <br><br>
+  <button onclick="document.body.classList.toggle('dark')">🌙 Dark Mode</button>
+</div>
+
+<!-- ✅ UPDATED ABOUT -->
+<div class="container">
+  <div class="card">
+    <h2>About Me 👩</h2>
+
+    <img src="your-photo.jpg" width="120" 
+    style="border-radius:50%; margin-bottom:10px; box-shadow:0 0 10px rgba(0,0,0,0.3);">
+
+    <p>
+      Hello, mera naam <b>Garima</b> hai. Main ek passionate aur hardworking student hoon.
+      Mujhe blogging aur online earning seekhna pasand hai 💻
+    </p>
+
+    <hr>
+
+    <h3>My Family 👨‍👩‍👧‍👦</h3>
+
+    <ul>
+      <li>👨 Father: <b>Mr. Chandrama Sonkar</b></li>
+      <li>👩 Mother: <b>Reena Sonkar</b> (Teacher 👩‍🏫)</li>
+      <li>👧 Sisters: <b>Mahima</b>, <b>Tanu</b></li>
+      <li>👦 Brother: <b>Sarthak Sonkar</b></li>
+    </ul>
+
+    <p>Mere parents meri sabse badi strength hain 💖</p>
+
+    <h4>My Family Photo 📸</h4>
+    <img src="family-photo.jpg" width="100%" style="border-radius:10px;">
+
+    <hr>
+
+    <h3>My Future Goals 🎯</h3>
+    <ul>
+      <li>🚀 Successful Blogger banna</li>
+      <li>💰 Online earning start karna</li>
+      <li>🌐 Popular website banana</li>
+    </ul>
+
+  </div>
+</div>
+
+<!-- Skills -->
+<div class="container">
+  <div class="card">
+    <h2>My Skills 💡</h2>
+    <p>✔ Blogging</p>
+    <p>✔ Web Design</p>
+    <p>✔ Online Earning</p>
+  </div>
+</div>
+
+<!-- Blog -->
+<div class="container">
+  <div class="card">
+    <h2>My Blog 📝</h2>
+    <p>👉 How to Earn Money Online</p>
+    <p>👉 Best Apps for Students</p>
+    <p>👉 Blogging Tips</p>
+  </div>
+</div>
+
+<!-- ✅ UPDATED SOCIAL -->
+<div class="container">
+  <div class="card">
+    <h2>Follow Me 🔗</h2>
+    <p>
+      📸 Instagram: 
+      <a href="https://instagram.com/garimasonkar076" target="_blank">
+        @garimasonkar076
+      </a>
+    </p>
+  </div>
+</div>
+
+<!-- Contact -->
+<div class="container" id="contact">
+  <div class="card">
+    <h2>Contact Me 📞</h2>
+
+    <form action="mailto:garimasonkar076@gmail.com" method="post">
+      <input type="text" placeholder="Your Name" required><br><br>
+      <input type="email" placeholder="Your Email" required><br><br>
+      <textarea placeholder="Message" required></textarea><br><br>
+      <button>Send</button>
+    </form>
+
+    <hr>
+
+    <p>📧 garimasonkar076@gmail.com</p>
+    <p>📞 7237022425</p>
+  </div>
+</div>
+
+<!-- WhatsApp -->
+<a href="https://wa.me/917237022425" target="_blank" class="float">💬</a>
+
+</body>
+</html>
